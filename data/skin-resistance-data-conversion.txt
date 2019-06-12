@@ -1,0 +1,11 @@
+dat <- read.table("skin-resistance-short.txt", header=T)
+
+subject <- rep(dat$Subject, 5)
+subject <- as.factor(subject)
+resistance <- c(dat$E1, dat$E2, dat$E3, dat$E4, dat$E5)
+probe <- rep(1:5, length(subject)/5)
+probe <- as.factor(probe)
+levels(probe) <- c("E1", "E2", "E3", "E4", "E5")
+
+
+boxplot(log(resistance)~subject)

@@ -1,0 +1,13 @@
+Package: jaggR
+Type: Package
+Title: Supporting files and functions for the book Bayesian Modelling with JAGS
+Version: 0.1.0
+Author: James M. Curran
+Maintainer: James Curran <j.curran@auckland.ac.nz>
+Description: All the data and functions used to produce the book. We do not expect
+    most people to use the package for any other reason than to get simple access to the
+    data, and perhaps run some of the simple examples.
+License: GPL (>= 2)
+Imports: stats, graphics
+Encoding: UTF-8
+LazyData: true

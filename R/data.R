@@ -17,7 +17,22 @@
 #'
 #' @source Milton, J. S. (1992). Statistical Methods in the Biological and Health Sciences
 #' 2nd Edition, McGraw-Hill, New York, p. 316--319.
+"activity.df"
 
+#' Calculus marks
+
+#' Calculus marks from the 2012 first year calculus course from the
+#' Department of Mathematics and Statistics at Lancaster
+#' University.
+#'
+#' @format  A data.frame with 147 rows and two columns:
+#' \describe{
+#' \item{coursework}{final coursework mark out of 100.}
+#' \item{examination}{final examination mark out of 100.}
+#' }
+#'
+#' @source George Moran, Department of Mathematics and Statistics at Lancaster.
+"calculus.df"
 
 #' Energy and fat in chocolate bars
 #'
@@ -57,7 +72,7 @@
 #' \item{weight}{weight of the hedgehog, in grams}
 #' }
 #' @source David Lucy
-"hedgehog-growth.df"
+"hedgehog.growth.df"
 
 #' Age estimation by root dentine translucency
 #'
@@ -142,3 +157,40 @@
 #' \item{test}{A maze number.}
 #' \item{time}{time, in seconds taken for the rat to navigate the maze.}
 #' }
+"ratmaze.df"
+
+#' Distance travelled by paper planes
+#'
+#' A group from Queensland University of Technology conducted an experiment
+#' where they recorded the distance flown by paper aeroplanes. The experimenters
+#' used a sealed corridor at the University, and controlled the design of the
+#' aeroplane, the weight of the paper from which each aeroplace was constructed,
+#' and the angle of incidence at launch for each paper plane. The data and
+#' further notes for this experiment can be found at
+#' http://www.statsci.org/data/oz/planes.html.
+#'
+#' @format A data.frame with 16 rows and 5 columns:
+#' \describe{
+#'   \item{distance}{Distance travelled in mm.}
+#'   \item{paper}{Paper weight in gsm, either 80 gsm or 50 gsm.}
+#'   \item{angle}{Angle of launch, horizontal or 45 degrees.}
+#'   \item{design}{Design of the plane, either high performance or simple.}
+#' }
+#'
+#' @source Mackisack, M. S. (1994). What is the use of experiments conducted by
+#' statistics students? Journal of Statistics Education, 2, no 1.
+"plane.df"
+
+#' Simulated weights of difference breeds of terriers
+#'
+#' Simulated samples of weights from English terrier breeds
+#' with the parameter values for the means for the simulation
+#' taken from http://www.dogsindepth.com. The variances are
+#' assumed to be constant.
+#'
+#' @format A data.frame with 30 rows and 2 columns.
+#' \describe{
+#' \item{weight}{Weight of dog in kg.}
+#' \item{breed}{Breed, either Skye, Manchester or Norwich.}
+#' }
+"terriers.df"

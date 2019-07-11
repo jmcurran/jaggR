@@ -1,3 +1,17 @@
+#' Age estimation from aspartic acid concentration
+#'
+#' Aspartic acid data for modern upper and lower first pre-molars: taken from
+#' Gillard et al 1991
+#'
+#' @format A data.frame with 37 rows and 3 columns:
+#' \describe{
+#' \item{age}{Age in years.}
+#' \item{period}{}
+#' \item{aspartic}{}
+#' }
+"acid.df"
+
+
 #' Energy requirements for different activities
 #'
 #' An experiment was conducted to compare the energy requirements of three
@@ -34,6 +48,18 @@
 #' @source George Moran, Department of Mathematics and Statistics at Lancaster.
 "calculus.df"
 
+#' Cell survival data
+#'
+#' The data comes from an experiment to measure the mortality of cancer cells
+#' under radiation #under taken in the Department of Radiology, University of Cape
+#' Town. Four hundred cells were placed on a dish, and three dishes were
+#' irradiated at a time, or occasion. After the cells were irradiated, the
+#' surviving cells were counted. Since cells would also die naturally, #dishes
+#' with cells were put into the radiation chamber without being irradiated, to
+#' establish #the natural mortality. These data gives only these zero-dose data.
+#' these data are from ozDASL
+"cell_surv.df"
+
 #' Energy and fat in chocolate bars
 #'
 #' The amount of fat (g) and energy (Cal) in 16 chocolate bars.
@@ -50,6 +76,20 @@
 #' someone tells us.
 #' @keywords datasets
 "chocolate.df"
+
+#' Carbon isotopes in trees
+#'
+#' These observations were made by Robertson et. al.
+#' They are the mean delta 13 C compositions of several
+#' individual trees from two locations in Central England
+#' mean temperatures from the CET are also given
+#'
+#' @format A data.frame with 200 rows and 4 columns:
+#' \describe{
+#'   \item{year}{}
+#'   \item{iso}{}
+#'   \item{temp}{}
+#' }
 
 
 #' Impact strength of insulation cuts in foot-pounds.
@@ -172,7 +212,7 @@
 #' @format A data.frame with 16 rows and 5 columns:
 #' \describe{
 #'   \item{distance}{Distance travelled in mm.}
-#'   \item{paper}{Paper weight in gsm, either 80 gsm or 50 gsm.}
+#'   \item{paper}{Paper weight in grams per square metre (gsm), either 80 gsm or 50 gsm.}
 #'   \item{angle}{Angle of launch, horizontal or 45 degrees.}
 #'   \item{design}{Design of the plane, either high performance or simple.}
 #' }

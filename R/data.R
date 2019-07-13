@@ -51,12 +51,12 @@
 #' Cell survival data
 #'
 #' The data comes from an experiment to measure the mortality of cancer cells
-#' under radiation #under taken in the Department of Radiology, University of Cape
+#' under radiation under taken in the Department of Radiology, University of Cape
 #' Town. Four hundred cells were placed on a dish, and three dishes were
 #' irradiated at a time, or occasion. After the cells were irradiated, the
-#' surviving cells were counted. Since cells would also die naturally, #dishes
+#' surviving cells were counted. Since cells would also die naturally, dishes
 #' with cells were put into the radiation chamber without being irradiated, to
-#' establish #the natural mortality. These data gives only these zero-dose data.
+#' establish the natural mortality. These data gives only these zero-dose data.
 #' these data are from ozDASL
 "cell_surv.df"
 
@@ -113,6 +113,29 @@
 #' }
 #' @source David Lucy
 "hedgehog.growth.df"
+
+#' from the Commission facility in Hanford, Washington. One of the major safety
+#' problems encountered there has been the storage of radioactive wastes. Over
+#' the years, significant quantities of these substances - including strontium
+#' 90 and cesium 137 - have leaked from their open-pit storage areas into the
+#' nearby Columbia River, which flows along the Washington-Oregon border, and
+#' eventually empties into the Pacific Ocean.
+#'
+#' To measure the health consequences of this contamination, an index of
+#' exposure was calculated for each of the nine Oregon counties having frontage
+#' on either the Columbia River or the Pacific Ocean. This particular index was
+#' based on several factors, including the county's stream distance from
+#' Hanford and the average distance of its population from any water frontage.
+#' As a covariate, the cancer mortality rate was determined for each of these
+#' same counties.
+#' The data give the index of exposure and the cancer mortality rate during
+#' 1959-1964 for the nine Oregon counties affected. Higher index values
+#' represent higher levels of contamination.
+#'
+#' @source Fadeley, R. C. (1965). Oregon malignancy pattern physiographically
+#' related to Hanford, Washington, Radioisotope Storage. Journal of
+#' Environmental Health 27, 883-897.
+"radiation.df"
 
 #' Age estimation by root dentine translucency
 #'

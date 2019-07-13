@@ -6,7 +6,8 @@
 \usage{
 setPlotPrefs(mar = c(3, 4, 1, 1), cex = 1, oma = c(0, 0, 0, 0),
   tcl = -0.35, mgp = c(1.5, 0.5, 0), las = 1, cex.lab = 1,
-  font.lab = 1, lwd = 1, ...)
+  font.lab = 1, lwd = 1, on.graph.line = 3, shading.density = 8,
+  arrow.length = 0.1, on.graph.cex = 1, margin.cex = 1.2, ...)
 }
 \arguments{
 \item{mar}{plot margings}
@@ -26,6 +27,16 @@ setPlotPrefs(mar = c(3, 4, 1, 1), cex = 1, oma = c(0, 0, 0, 0),
 \item{font.lab}{font of plot labels}
 
 \item{lwd}{line width}
+
+\item{on.graph.line}{no idea}
+
+\item{shading.density}{shading density}
+
+\item{arrow.length}{arrow head length}
+
+\item{on.graph.cex}{character expansion for text on graphs}
+
+\item{margin.cex}{character expansion for text for margins}
 
 \item{...}{other arguments to be passed to par}
 }

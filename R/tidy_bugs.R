@@ -1,7 +1,18 @@
-tidy_bugs = function(path = "."){
-  arrow = TRUE
-  brace.newline = FALSE
-  indent = 2
+#' Tidy BUGS files
+#'
+#' This function cleans up the formatting
+#'
+#' @param path location of file(s)
+#' @param arrow use the \code{<-} operator if TRUE, \code{=} otherwise.
+#' @param brace.newline move braces to a new line if TRUE
+#' @param indent number of spaces to indent code blocks
+#'
+#' @importFrom glue glue
+#' @importFrom formatR tidy_source
+tidy_bugs = function(path = ".",
+                     arrow = TRUE,
+                     brace.newline = FALSE,
+                     indent = 2){
 
   Files = list.files(path, pattern = "[.]bug(s[.]R)?$", full.names = TRUE)
 

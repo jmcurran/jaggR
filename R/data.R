@@ -6,9 +6,14 @@
 #' @format A data.frame with 37 rows and 3 columns:
 #' \describe{
 #' \item{age}{Age in years.}
-#' \item{period}{}
-#' \item{aspartic}{}
+#' \item{period}{Period of tooth, modern or victorian.}
+#' \item{aspartic}{Percentage of D-aspartic acid.}
 #' }
+#'
+#' @source Gillard, R.D., Hardman, S.M., Pollard, A.M., Sutton, P.A. and
+#' Whittaker, D.K. (1991) 'Determinations of age at death in the archaeological populations
+#' using the D/L ratio of aspartic acid in dental collagen' in Archaeometry 90,
+#' eds. Pernicka, E. and Wagner, G.A., p.637-644, Birkhauser Verlag, Berlin.
 "acid.df"
 
 
@@ -34,7 +39,7 @@
 "activity.df"
 
 #' Calculus marks
-
+#'
 #' Calculus marks from the 2012 first year calculus course from the
 #' Department of Mathematics and Statistics at Lancaster
 #' University.
@@ -47,6 +52,21 @@
 #'
 #' @source George Moran, Department of Mathematics and Statistics at Lancaster.
 "calculus.df"
+
+#' Carbon isotopes in trees
+#'
+#' These observations were made by Robertson et. al.
+#' They are the mean delta 13 C compositions of several
+#' individual trees from two locations in Central England
+#' mean temperatures from the CET are also given
+#'
+#' @format A data.frame with 200 rows and 4 columns:
+#' \describe{
+#'   \item{year}{}
+#'   \item{iso}{}
+#'   \item{temp}{}
+#' }
+"carbon.df"
 
 #' Cell survival data
 #'
@@ -66,7 +86,6 @@
 #' Source is unknown, but we would be happy to give credit if
 #' someone tells us.
 #'
-#'
 #' @format A data.frame with 16 rows and 2columns:
 #' \describe{
 #' \item{energy}{energy, in Calories = kilocalories}
@@ -77,20 +96,19 @@
 #' @keywords datasets
 "chocolate.df"
 
-#' Carbon isotopes in trees
+#' Age estimation based on changes in dental characteristics
 #'
-#' These observations were made by Robertson et. al.
-#' They are the mean delta 13 C compositions of several
-#' individual trees from two locations in Central England
-#' mean temperatures from the CET are also given
-#'
-#' @format A data.frame with 200 rows and 4 columns:
+#' @format a data.frame with 759 rows and 10 columns:
 #' \describe{
-#'   \item{year}{}
-#'   \item{iso}{}
-#'   \item{temp}{}
+#' \item{sex}{sex of subject, female or male.}
+#' \item{age}{age, in years.}
+#' \item{quadrant}{location in mouth of tooth}
+#' \item{tooth}{tooth identifier}
+#' \item{attrition}{}
+#' \item{recession}{}
+#' \item{dentine}{qualitative assessment of remaining dentine}
 #' }
-
+"gustafson.df"
 
 #' Impact strength of insulation cuts in foot-pounds.
 #'
@@ -139,12 +157,25 @@
 
 #' Age estimation by root dentine translucency
 #'
+#' Root dentine translucency is, in humans, an age related physiological
+#' feature. In the dentine of teeth in adult humans the
+#' tubecular microstructures fill with a highly crystalline substance making
+#' them become nearly invisible when looked at in normal light. This process
+#' starts from the apical foramen in early adulthood, and progresses up the
+#' tooth into advanced old age. Solheim (Lucy et al., 1996) collected data
+#' on age, root dentine translucency for 71 maxillary second incisors from a
+#' Norweigian population. The sex of each individual was also noted.
+#'
 #' @format A data.frame with 71 rows and 3 columns:
 #' \describe{
 #' \item{age}{Age of subject, in years}
 #' \item{sex}{Sex of subject, female or male}
 #' \item{rdt}{root dentine translucency}
 #' }
+#'
+#' @source Lucy, D., Aykroyd, R.G., Pollard, A.M. and Solheim (1996), T.,"A
+#' Bayesian approach to adult human age estimation from dental observations
+#' by Johanson's age changes", Journal of Forensic Sciences 41(2):189-194.
 "rdt.df"
 
 #' Does insulation make a difference?

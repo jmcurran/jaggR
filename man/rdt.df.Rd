@@ -10,10 +10,22 @@
 \item{sex}{Sex of subject, female or male}
 \item{rdt}{root dentine translucency}
 }}
+\source{
+Lucy, D., Aykroyd, R.G., Pollard, A.M. and Solheim (1996), T.,"A
+Bayesian approach to adult human age estimation from dental observations
+by Johanson's age changes", Journal of Forensic Sciences 41(2):189-194.
+}
 \usage{
 rdt.df
 }
 \description{
-Age estimation by root dentine translucency
+Root dentine translucency is, in humans, an age related physiological
+feature. In the dentine of teeth in adult humans the
+tubecular microstructures fill with a highly crystalline substance making
+them become nearly invisible when looked at in normal light. This process
+starts from the apical foramen in early adulthood, and progresses up the
+tooth into advanced old age. Solheim (Lucy et al., 1996) collected data
+on age, root dentine translucency for 71 maxillary second incisors from a
+Norweigian population. The sex of each individual was also noted.
 }
 \keyword{datasets}

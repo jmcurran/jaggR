@@ -5,16 +5,22 @@
 \title{Tidy BUGS files}
 \usage{
 tidy_bugs(path = ".", arrow = TRUE, brace.newline = FALSE,
-  indent = 2)
+  indent = 2, wrap = TRUE, width.cutoff = 50)
 }
 \arguments{
 \item{path}{location of file(s)}
 
-\item{arrow}{use the \code{<-} operator if TRUE, \code{=} otherwise.}
+\item{arrow}{use the \code{<-} operator if TRUE, \code{=} otherwise}
 
 \item{brace.newline}{move braces to a new line if TRUE}
 
 \item{indent}{number of spaces to indent code blocks}
+
+\item{wrap}{whether to wrap comments to the linewidth determined by
+\code{width.cutoff}}
+
+\item{width.cutoff}{passed to \code{deparse}: integer in [20, 500]
+determining the cutoff at which line-breaking is tried}
 }
 \description{
 This function cleans up the formatting

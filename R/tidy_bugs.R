@@ -3,16 +3,22 @@
 #' This function cleans up the formatting
 #'
 #' @param path location of file(s)
-#' @param arrow use the \code{<-} operator if TRUE, \code{=} otherwise.
+#' @param arrow use the \code{<-} operator if TRUE, \code{=} otherwise
 #' @param brace.newline move braces to a new line if TRUE
 #' @param indent number of spaces to indent code blocks
+#' @param wrap whether to wrap comments to the linewidth determined by
+#' \code{width.cutoff}
+#' @param width.cutoff passed to \code{deparse}: integer in [20, 500]
+#' determining the cutoff at which line-breaking is tried
 #'
 #' @importFrom glue glue
 #' @importFrom formatR tidy_source
 tidy_bugs = function(path = ".",
                      arrow = TRUE,
                      brace.newline = FALSE,
-                     indent = 2){
+                     indent = 2,
+                     wrap = TRUE,
+                     width.cutoff = 50){
 
   Files = list.files(path, pattern = "[.]bug(s[.]R)?$", full.names = TRUE)
 
@@ -35,12 +41,17 @@ tidy_bugs = function(path = ".",
       Lines[modelLine] = sub("model", "", Lines[modelLine])
     }
 
-    writeLines(Lines, "temp_in.R")
-    tidy_source(source = "temp_in.R", file = "temp_out.R",
-                arrow = arrow, brace.newline = brace.newline,
-                indent = indent)
+    tempInPath = file.path(tempdir(), "temp_in.R")
+    tempOutPath = file.path(tempdir(), "temp_out.R")
 
-    Lines = readLines("temp_out.R")
+    writeLines(Lines, tempInPath)
+    tidy_source(source = tempInPath, file = tempOutPath,
+                arrow = arrow, brace.newline = brace.newline,
+                indent = indent,
+                wrap = wrap,
+                width.cutoff = width.cutoff)
+
+    Lines = readLines(tempOutPath)
     blocks = grep("^[{]$", Lines)
     numBlocks = length(blocks)
 
@@ -63,12 +74,12 @@ tidy_bugs = function(path = ".",
       stop(glue("The file {f} doesn't contain a model block"))
     }
 
-    if(file.exists("temp_in.R")){
-      file.remove("temp_in.R")
+    if(file.exists(tempInPath)){
+      file.remove(tempInPath)
     }
 
-    if(file.exists("temp_out.R")){
-      file.remove("temp_out.R")
+    if(file.exists(tempOutPath)){
+      file.remove(tempOutPath)
     }
 
   }

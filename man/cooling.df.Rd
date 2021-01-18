@@ -4,14 +4,16 @@
 \name{cooling.df}
 \alias{cooling.df}
 \title{Does insulation make a difference?}
-\format{A data.frame with 47 rows and 3 columns:
+\format{
+A data.frame with 47 rows and 3 columns:
 \describe{
 \item{time}{The time since turning off the heaters and fan}
 \item{uninsulated}{The recorded temperature with absolutely no insulation
  in the room whatsoever---outside temperature 8.0 C.}
 \item{insulated}{The recorded temperature with part of a wall and the floor insulated---
 outside temperature 8.1 C}
-}}
+}
+}
 \source{
 David Lucy
 }

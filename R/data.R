@@ -16,6 +16,47 @@
 #' eds. Pernicka, E. and Wagner, G.A., p.637-644, Birkhauser Verlag, Berlin.
 "acid.df"
 
+#' Time taken to sort random vectors of various lengths using bubble sort.
+#'
+#' Students learning to programme are often taught the bubble sort algorithm for several
+#' reasons. Firstly, sorting is a commonly used operation in programming, so having a way
+#' of sorting vectors into order is useful. Secondly, it lets the instructor talk about
+#' the order of the algorithm, and how it is very inefficient. In computer science,
+#' big O notation is used to classify algorithms according to how their run time or space requirements
+#' grow as the input size grows. The bubble sort algorithm is known to be O(n^2). That is, the time
+#' taken to run the algorithm increases quadratically (with the square) with the size of the vector.
+#'
+#' @details
+#' This data set consists of 200 observations generated using the following code:
+#' ```
+#' set.seed(123)
+#' N = 200
+#' bsort.df = data.frame(n = rep(0, N), time = rep(0, N))
+#'
+#' n = sample(100:1000, size = N, replace = TRUE)
+#'
+#' pb = txtProgressBar(0, N, style = 3)
+#'
+#' for(i in 1:N){
+#'   x = rnorm(n[i])
+#'   bsort.df$n[i] = n[i]
+#'   bsort.df$time[i] = system.time(bubbleSort(x))[1]
+#'   setTxtProgressBar(pb, i)
+#' }
+#' close(pb)
+#' ```
+#' It consists of the times taken to sort 200 vectors of random length between 100 and 1,000.
+#' The vectors themselves are random samples of size n[i] from the standard normal distribution.
+#'
+#' @format A data.frame with 200 rows and 2 columns:
+#' \describe{
+#' \item{n}{Size of the random vector.}
+#' \item{time}{Time in seconds taken to sort the vector using \code{bubbleSort}.}
+#' }
+#'
+#' @seealso \code{\link{bubbleSort}}
+"bsort.df"
+
 
 #' Energy requirements for different activities
 #'
@@ -68,6 +109,34 @@
 #' }
 "carbon.df"
 
+#' Car listings from trademe
+#'
+#' This data set consists of 3,618 listings scraped from the New Zealand website \href{http://trademe.co.nz}{tradee}.
+#' trademe is similar to \href{ebay.com}{ebay} in that is an online auction site which allows sellers to list new
+#' and used goods for sale. Goods may be purchased via auction, or outright if the seller has enabled that option. Many
+#' New Zealanders, including commericial car dealers, use the website to buy and sell cars. The listings gathered consist
+#' are mostly for Mazda 3 and Toyota Corolla vehicles, along with imported vehicles which may be the same car, but with
+#' different badging.
+#'
+#'  @format A data.frame with 3,618 rows and 14 columns:
+#'  \describe{
+#'  \item{obs}{The observation number, from 1 to 3618.}
+#'  \item{title}{The listing title - basically the make and model of the car.}
+#'  \item{year}{The year of manufacture of the vehicle.}
+#'  \item{age}{The age of the vehicle as of 2013 (when this data was collected). So a car manufactured in 2009 would have an
+#'  age of 4, for example.}
+#'  \item{price}{The asking price, in NZD.}
+#'  \item{km}{The number of kilometres on the odometer---i.e. the "mileage."}
+#'  \item{cc}{The displacement of the engine in cubic centimetres.}
+#'  \item{fuel}{The fuel used by  the vehicle: either Petrol (gasoline) or Diesel.}
+#'  \item{doors}{The number of doors in the car. Note 3 and 5 door cars are hatchbacks.}
+#'  \item{list.color}{The colour of the car given in the listing.}
+#'  \item{simple.color}{An attempt to standardise the colour to a reduced category. For example sky blue, and light blue would
+#'  both get transformed to blue.}
+#'  \item{make}{The manufacturer of the car: either Mazda or Toyota}
+#'  }
+"car.prices.df"
+
 #' Cell survival data
 #'
 #' The data comes from an experiment to measure the mortality of cancer cells
@@ -86,7 +155,7 @@
 #' Source is unknown, but we would be happy to give credit if
 #' someone tells us.
 #'
-#' @format A data.frame with 16 rows and 2columns:
+#' @format A data.frame with 16 rows and 2 columns:
 #' \describe{
 #' \item{energy}{energy, in Calories = kilocalories}
 #' \item{fat}{fat content, in grams}
@@ -124,15 +193,15 @@
 
 #' Michelson's speed of light data
 #'
-#'  @format a data.frame with 43 rows and 2 columns:
-#'  \describe{
-#'  \item{speed}{The scaled speed of light measured in a single experiment. The
-#'  scaling is the measurement minus 299,000 km/s. E.g. the first entry in the
-#'  data.frame is 850, which is 299,850 km/s.}
-#'  \item{year}{The year in which the experiment was conducted, either 1879 or 1882.}
-#'  }
-#'  @source Stigler, S. M. (1977), "Do robust estimators work with real data?",
-#'  The Annals of Statistics 5:1055-1098.
+#' @format a data.frame with 43 rows and 2 columns:
+#' \describe{
+#' \item{speed}{The scaled speed of light measured in a single experiment. The
+#' scaling is the measurement minus 299,000 km/s. E.g. the first entry in the
+#' data.frame is 850, which is 299,850 km/s.}
+#' \item{year}{The year in which the experiment was conducted, either 1879 or 1882.}
+#' }
+#' @source Stigler, S. M. (1977), "Do robust estimators work with real data?",
+#' The Annals of Statistics 5:1055-1098.
 "lightspeed.df"
 
 #' Hedgehog growth
@@ -168,6 +237,37 @@
 #' Environmental Health 27, 883-897.
 "radiation.df"
 
+#' Mortality rates for different species
+#'
+#' Ecologists Michael McCoy and James Gillooly were interested in predicting
+#' mortality rates for different species based on a number of variables including
+#' body mass, temperature. In their paper (McCoy and Gillooly, 2008) they explore
+#' the hypothesis that the natural logarithm of temperature‐corrected mortality rate
+#' should be a linear function of the natural logarithm of body mass. The
+#' temperature-corrected mortality rate is based upon previous work which draws
+#' on results from biology, biochemistry, and thermodynamics. Users are encouraged
+#' to read the original source for a deeper explanation.
+#'
+#' @format a data.frame with 2117 rows and 4 columns:
+#' \describe{
+#' \item{group}{a factor indicating which one of the six taxonimic groups the observation
+#' belongs to: bird, fish, invertebrate, mammal, multicellular plant, and phytoplankton.}
+#' \item{species}{the species of the observation.}
+#' \item{mass}{the body mass in grams (g).}
+#' \item{mortality}{the mortality rate.}
+#' \item{temp}{the average body temperature in degrees Celcius.}
+#' \item{E}{average activation energy of heterotrophic respiration in animals (0.65 eV)
+#' or photosynthesis in plants (0.32 eV).}
+#' \item{mort.corrected}{mortality corrected by a Boltzmann-Arrhenius factor, specifically, divided by exp(-E/k * (1 / T - 1 / T20)),
+#' where k is Boltzmann constant 8.62 x 10^-5, T20 is 20 degrees Celcius in degrees Kelvin, i.e. 293, and T is average
+#' body temperature \code{temp} in degrees Kelvin.}
+#' }
+#'
+#' @source McCoy, M.W. and Gillooly, J.F. (2008), Predicting natural mortality
+#' rates of plants and animals. Ecology Letters, 11: 710-716.
+#' \href{https://doi-org.ezproxy.auckland.ac.nz/10.1111/j.1461-0248.2008.01190.x}{https://doi-org.ezproxy.auckland.ac.nz/10.1111/j.1461-0248.2008.01190.x}
+"mortality.df"
+
 #' Age estimation by root dentine translucency
 #'
 #' Root dentine translucency is, in humans, an age related physiological
@@ -190,6 +290,31 @@
 #' Bayesian approach to adult human age estimation from dental observations
 #' by Johanson's age changes", Journal of Forensic Sciences 41(2):189-194.
 "rdt.df"
+
+#' Shotgun range data
+#' In order to test the validity of range-of-fire estimates obtained by
+#' the application of regression analysis to shotgun pellet patterns, a
+#' blind study was conducted in which questioned pellet patterns were
+#' fired at randomly selected ranges between 3.0 and 15.2 m (10 and 50 ft)
+#' with two different 12-gauge shotguns. each firing a different type
+#' of buckshot cartridge. Test firings at known ranges were also
+#' conducted with the same weapons and ammunition.
+#'
+#' @format  A data frame with 70 observations on 4 variables.
+#' \describe{
+#' \item{range}{The range in feet of the firing.}
+#' \item{gun}{The model of shotgun used in the experiment.}
+#' \item{expt}{A factor recording whether the data was to be used for building/training the model, or testing it.}
+#' \item{area}{The area of the smallest rectangle that would enclose the pellet pattern.}
+#'  }
+#'
+#' @source Rowe, W.F. and Hanson, S.R. (1985) Range-of-fire estimates from regression
+#' analysis applied to the spreads of shotgun pellet patterns: Results of a blind study,
+#' Forensic Science International, 28(3-4): 239-250.
+#' @keywords datasets
+"shotgun.df"
+
+#'
 
 #' Does insulation make a difference?
 #'

@@ -4,13 +4,15 @@
 \name{ratmaze.df}
 \alias{ratmaze.df}
 \title{Times taken for a rat to navigate through a maze}
-\format{A data.frame with 135 rows and 4 columns:
+\format{
+A data.frame with 135 rows and 4 columns:
 \describe{
 \item{subject}{An ID for each rat}
 \item{treatment}{The treatment adminstered to the subject: control/none, thouiracil, thyroxin.}
 \item{test}{A maze number.}
 \item{time}{time, in seconds taken for the rat to navigate the maze.}
-}}
+}
+}
 \usage{
 ratmaze.df
 }

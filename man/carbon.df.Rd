@@ -4,12 +4,14 @@
 \name{carbon.df}
 \alias{carbon.df}
 \title{Carbon isotopes in trees}
-\format{A data.frame with 200 rows and 4 columns:
+\format{
+A data.frame with 200 rows and 4 columns:
 \describe{
   \item{year}{}
   \item{iso}{}
   \item{temp}{}
-}}
+}
+}
 \usage{
 carbon.df
 }

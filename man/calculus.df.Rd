@@ -4,11 +4,13 @@
 \name{calculus.df}
 \alias{calculus.df}
 \title{Calculus marks}
-\format{A data.frame with 147 rows and two columns:
+\format{
+A data.frame with 147 rows and two columns:
 \describe{
 \item{coursework}{final coursework mark out of 100.}
 \item{examination}{final examination mark out of 100.}
-}}
+}
+}
 \source{
 George Moran, Department of Mathematics and Statistics at Lancaster.
 }

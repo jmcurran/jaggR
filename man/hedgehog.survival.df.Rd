@@ -4,11 +4,13 @@
 \name{hedgehog.survival.df}
 \alias{hedgehog.survival.df}
 \title{Hedgehog survival}
-\format{A data.frame with 31 observations and 2 columns:
+\format{
+A data.frame with 31 observations and 2 columns:
 \describe{
 \item{BI}{The Bunnell Index (BI) of the hedgehog at the time of admission.}
 \item{survived}{A logical variable recording whether the hedgehog survived or died.}
-}}
+}
+}
 \source{
 Bunnell, T. (2002) The Assessment of British Hedgehog (Erinaceus europaeus)
 Casualties on Arrival and Determination of Optimum Release Weights Using a New

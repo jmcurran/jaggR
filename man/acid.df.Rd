@@ -4,12 +4,14 @@
 \name{acid.df}
 \alias{acid.df}
 \title{Age estimation from aspartic acid concentration}
-\format{A data.frame with 37 rows and 3 columns:
+\format{
+A data.frame with 37 rows and 3 columns:
 \describe{
 \item{age}{Age in years.}
 \item{period}{Period of tooth, modern or victorian.}
 \item{aspartic}{Percentage of D-aspartic acid.}
-}}
+}
+}
 \source{
 Gillard, R.D., Hardman, S.M., Pollard, A.M., Sutton, P.A. and
 Whittaker, D.K. (1991) 'Determinations of age at death in the archaeological populations

@@ -4,12 +4,14 @@
 \name{rdt.df}
 \alias{rdt.df}
 \title{Age estimation by root dentine translucency}
-\format{A data.frame with 71 rows and 3 columns:
+\format{
+A data.frame with 71 rows and 3 columns:
 \describe{
 \item{age}{Age of subject, in years}
 \item{sex}{Sex of subject, female or male}
 \item{rdt}{root dentine translucency}
-}}
+}
+}
 \source{
 Lucy, D., Aykroyd, R.G., Pollard, A.M. and Solheim (1996), T.,"A
 Bayesian approach to adult human age estimation from dental observations

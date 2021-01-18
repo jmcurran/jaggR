@@ -4,7 +4,9 @@
 \name{cell_surv.df}
 \alias{cell_surv.df}
 \title{Cell survival data}
-\format{An object of class \code{data.frame} with 27 rows and 2 columns.}
+\format{
+An object of class \code{data.frame} with 27 rows and 2 columns.
+}
 \usage{
 cell_surv.df
 }

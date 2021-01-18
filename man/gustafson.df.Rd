@@ -4,7 +4,8 @@
 \name{gustafson.df}
 \alias{gustafson.df}
 \title{Age estimation based on changes in dental characteristics}
-\format{a data.frame with 759 rows and 10 columns:
+\format{
+a data.frame with 759 rows and 10 columns:
 \describe{
 \item{sex}{sex of subject, female or male.}
 \item{age}{age, in years.}
@@ -13,7 +14,8 @@
 \item{attrition}{}
 \item{recession}{}
 \item{dentine}{qualitative assessment of remaining dentine}
-}}
+}
+}
 \usage{
 gustafson.df
 }

@@ -4,12 +4,14 @@
 \name{activity.df}
 \alias{activity.df}
 \title{Energy requirements for different activities}
-\format{A data.frame with 24 rows and 3 columns:
+\format{
+A data.frame with 24 rows and 3 columns:
 \describe{
 \item{subject}{a subject ID.}
 \item{activity}{running, walking, riding.}
 \item{energy}{energy expended during activity, in kilocalories (Cal)}
-}}
+}
+}
 \source{
 Milton, J. S. (1992). Statistical Methods in the Biological and Health Sciences
 2nd Edition, McGraw-Hill, New York, p. 316--319.

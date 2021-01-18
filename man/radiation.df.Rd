@@ -9,7 +9,9 @@ the years, significant quantities of these substances - including strontium
 90 and cesium 137 - have leaked from their open-pit storage areas into the
 nearby Columbia River, which flows along the Washington-Oregon border, and
 eventually empties into the Pacific Ocean.}
-\format{An object of class \code{data.frame} with 9 rows and 3 columns.}
+\format{
+An object of class \code{data.frame} with 9 rows and 3 columns.
+}
 \source{
 Fadeley, R. C. (1965). Oregon malignancy pattern physiographically
 related to Hanford, Washington, Radioisotope Storage. Journal of

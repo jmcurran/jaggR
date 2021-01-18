@@ -4,11 +4,13 @@
 \name{chocolate.df}
 \alias{chocolate.df}
 \title{Energy and fat in chocolate bars}
-\format{A data.frame with 16 rows and 2columns:
+\format{
+A data.frame with 16 rows and 2 columns:
 \describe{
 \item{energy}{energy, in Calories = kilocalories}
 \item{fat}{fat content, in grams}
-}}
+}
+}
 \source{
 Source is unknown, but we would be happy to give credit if
 someone tells us.

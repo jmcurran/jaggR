@@ -4,13 +4,15 @@
 \name{plane.df}
 \alias{plane.df}
 \title{Distance travelled by paper planes}
-\format{A data.frame with 16 rows and 5 columns:
+\format{
+A data.frame with 16 rows and 5 columns:
 \describe{
   \item{distance}{Distance travelled in mm.}
   \item{paper}{Paper weight in grams per square metre (gsm), either 80 gsm or 50 gsm.}
   \item{angle}{Angle of launch, horizontal or 45 degrees.}
   \item{design}{Design of the plane, either high performance or simple.}
-}}
+}
+}
 \source{
 Mackisack, M. S. (1994). What is the use of experiments conducted by
 statistics students? Journal of Statistics Education, 2, no 1.

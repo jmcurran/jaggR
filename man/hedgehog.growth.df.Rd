@@ -4,11 +4,13 @@
 \name{hedgehog.growth.df}
 \alias{hedgehog.growth.df}
 \title{Hedgehog growth}
-\format{a data.frame with 77 rows and 2 columns:
+\format{
+a data.frame with 77 rows and 2 columns:
 \describe{
 \item{date}{Date in DD-Month-YYYY format}
 \item{weight}{weight of the hedgehog, in grams}
-}}
+}
+}
 \source{
 David Lucy
 }

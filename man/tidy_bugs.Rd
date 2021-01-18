@@ -4,8 +4,14 @@
 \alias{tidy_bugs}
 \title{Tidy BUGS files}
 \usage{
-tidy_bugs(path = ".", arrow = TRUE, brace.newline = FALSE,
-  indent = 2, wrap = TRUE, width.cutoff = 50)
+tidy_bugs(
+  path = ".",
+  arrow = TRUE,
+  brace.newline = FALSE,
+  indent = 2,
+  wrap = TRUE,
+  width.cutoff = 50
+)
 }
 \arguments{
 \item{path}{location of file(s)}

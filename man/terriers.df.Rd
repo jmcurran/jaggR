@@ -4,11 +4,13 @@
 \name{terriers.df}
 \alias{terriers.df}
 \title{Simulated weights of difference breeds of terriers}
-\format{A data.frame with 30 rows and 2 columns.
+\format{
+A data.frame with 30 rows and 2 columns.
 \describe{
 \item{weight}{Weight of dog in kg.}
 \item{breed}{Breed, either Skye, Manchester or Norwich.}
-}}
+}
+}
 \usage{
 terriers.df
 }

@@ -165,6 +165,35 @@
 #' @keywords datasets
 "chocolate.df"
 
+#' Height, weight and fingerprint measurements collected from 200 participants
+#'
+#' This dataset contains the height, weight and 4 fingerprint measurements
+#' (length, width, area and circumference), collected from 200 participants.
+#' This data was collected with the intention of performing regression analysis
+#' to asses whether a significant relationship exists between fingerprint size
+#' and physical stature.
+#'
+#' @format a data.frame with 200 rows and 11 columns:
+#' \describe{
+#' \item{number}{participant number}
+#' \item{gender}{self-declared gender of participant \code{female} or \code{male}}
+#' \item{age}{age in years}
+#' \item{hand}{dominant hand \code{left} or \code{right}}
+#' \item{height}{height in centimetres, average of three measurements}
+#' \item{weight}{weight in kilograms, average of three measurements}
+#' \item{temp}{fingerprint temperature in degrees Celius}
+#' \item{fpheight}{fingerprint height in millimetres}
+#' \item{width}{fingerprint width in millimetres}
+#' \item{area}{fingerprint area in squared millimetres}
+#' \item{circumference}{fingerprint circumference in millimetres}
+#' }
+#'
+#' @source McMurchie, Beth; Torrens, George; Kelly, Paul (2019).
+#' Height, weight and fingerprint measurements collected from 200 participants.
+#' Loughborough University. [Dataset](https://doi.org/10.17028/rd.lboro.7539206.v1)
+#' @keywords datasets
+"fingerprints.df"
+
 #' Age estimation based on changes in dental characteristics
 #'
 #' @format a data.frame with 759 rows and 10 columns:
@@ -313,8 +342,6 @@
 #' Forensic Science International, 28(3-4): 239-250.
 #' @keywords datasets
 "shotgun.df"
-
-#'
 
 #' Does insulation make a difference?
 #'

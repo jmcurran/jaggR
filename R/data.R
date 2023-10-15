@@ -16,6 +16,30 @@
 #' eds. Pernicka, E. and Wagner, G.A., p.637-644, Birkhauser Verlag, Berlin.
 "acid.df"
 
+#' Books Data
+#'
+#' This data consists of 50 sentence lengths from each of 8 books. The books
+#' \dQuote{Disclosure} and \dQuote{Rising Sun} were written by Michael
+#' Crichton, whilst the others \dQuote{Four Past Midnight}, \dQuote{The Dark
+#' Half}, \dQuote{ Eye of the Dragon}, \dQuote{The Shining}, \dQuote{The Stand}
+#' and \dQuote{The Tommy-Knockers} where written by Stephen King. The pages and
+#' sentences where chosen using a multistage design where the pages where
+#' selected at random, and then sentences within each page were selected at
+#' random. These data were collected by James Curran.
+#'
+#'
+#' @name books.df
+#' @docType data
+#' @format The data frame consists of 400 observations on 2 variables.
+#' \describe{
+#'  \item{length}{sentence length}
+#'  \item{book}{a factor with levels: 4.Past.Mid, Dark.Half, Disclosure,
+#'  Eye.Drag,Rising.Sun, Shining, Stand, T.Knock.}
+#'  \item{author}{a factor with levels: MC, SK.}
+#' }
+#' @keywords datasets
+"books.df"
+
 #' Time taken to sort random vectors of various lengths using bubble sort.
 #'
 #' Students learning to programme are often taught the bubble sort algorithm for several

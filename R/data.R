@@ -450,19 +450,23 @@
 #' aeroplane, the weight of the paper from which each aeroplace was constructed,
 #' and the angle of incidence at launch for each paper plane. The data and
 #' further notes for this experiment can be found at
-#' http://www.statsci.org/data/oz/planes.html.
+#' \href{http://www.statsci.org/data/oz/planes.html}{OzDASL - Australasian Data and Story Library}.
 #'
-#' @format A data.frame with 16 rows and 5 columns:
+#' @format A data.frame with 16 rows and 6 columns:
 #' \describe{
 #'   \item{distance}{Distance travelled in mm.}
-#'   \item{paper}{Paper weight in grams per square metre (gsm), either 80 gsm or 50 gsm.}
-#'   \item{angle}{Angle of launch, horizontal or 45 degrees.}
-#'   \item{design}{Design of the plane, either high performance or simple.}
+#'   \item{paper}{Paper weight in grams per square metre (gsm), either 50 gsm or 80 gsm.}
+#'   \item{angle}{Angle of launch, horizontal (0 degrees) or 45 degrees.}
+#'   \item{design}{Design of the plane, either simple or advanced.}
+#'   \item{treat}{The treatment number used in the experiment. There are eight combinations of the levels of the
+#'   factors, so the treatment number corresponds to one of these unique combinations.}
+#'   \item{rep}{Replicate number within treatment. Each treatment is repeated twice so \code{rep} is either 1 or 2.}
 #' }
 #'
+#' @references Smyth, G. K. (2011). \href{https://gksmyth.github.io/ozdasl}{Australasian Data and Story Library (OzDASL).}
 #' @source Mackisack, M. S. (1994). What is the use of experiments conducted by
-#' statistics students? Journal of Statistics Education, 2, no 1.
-"plane.df"
+#' statistics students? Journal of Statistics Education, 2(1).
+"planes.df"
 
 #' Simulated weights of difference breeds of terriers
 #'
